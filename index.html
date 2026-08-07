@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard: O Pinguim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐧 Flashcards: Pinguins</h1>
+        <p>Aprenda fatos sobre a natureza!</p>
+    </header>
+
+    <main>
+        <!-- Container com animação 3D -->
+        <div class="card-container" onclick="virarCard()">
+            <div class="card" id="flashcard">
+                
+                <!-- Frente do Card -->
+                <div class="card-face card-front">
+                    <div class="emoji">🐧</div>
+                    <h2 id="titulo-pergunta">Pinguins conseguem voar no ar igual a outras aves?</h2>
+                    <p class="dica">Clique para virar o card</p>
+                </div>
+
+                <!-- Verso do Card -->
+                <div class="card-face card-back">
+                    <span id="status-tag" class="tag-resposta tag-falso">FALSO</span>
+                    <p id="texto-explicacao">Pinguins não voam no ar. Suas asas evoluíram para funcionar como nadadeiras debaixo d'água!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <button id="btn-proximo" onclick="proximaPergunta(event)">Próxima Pergunta ➔</button>
+    </main>
+
+    <footer>
+        <p>Desenvolvido no VS Code Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
